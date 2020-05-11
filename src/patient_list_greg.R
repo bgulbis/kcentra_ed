@@ -2,7 +2,7 @@ library(readxl)
 library(edwr)
 
 pts <- read_excel(
-    "data/external/patients_greg.xlsx",
+    "U:/Data/kcentra_ed/external/patients_greg.xlsx",
     col_names = "fin"
 )
 
