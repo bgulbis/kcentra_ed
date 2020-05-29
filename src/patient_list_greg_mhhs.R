@@ -24,7 +24,7 @@ print(mbo_fin_mhhs)
 
 pts_transfer <- mhhs_pts %>%
     filter(!is.na(transfer_fin)) %>%
-    mutate(mrn = str_sub(fin, end = 8L))
+    mutate(transfer_mrn = str_sub(transfer_fin, end = 8L))
 
 mbo_transfer <- concat_encounters(pts_transfer$transfer_fin)
 print(mbo_transfer)
