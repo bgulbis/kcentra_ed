@@ -28,7 +28,8 @@ df_transf_fin <- select(df_pts_mhhs, orig_fin = fin, transfer_fin)
 f <- c(
     "U:/Data/kcentra_ed/tidy/kcentra_data.xlsx",
     "U:/Data/kcentra_ed/tidy/kcentra_data_mhhs.xlsx",
-    "U:/Data/kcentra_ed/tidy/kcentra_data_transfer.xlsx"
+    "U:/Data/kcentra_ed/tidy/kcentra_data_transfer.xlsx",
+    "U:/Data/kcentra_ed/tidy/kcentra_data_2020-06-11.xlsx"
 )
 
 raw_demog <- map_df(
@@ -217,4 +218,4 @@ df <- raw_demog %>%
         as.numeric
     )
 
-write.xlsx(df, "U:/Data/kcentra_ed/final/baseline_data.xlsx")
+write.xlsx(df, "U:/Data/kcentra_ed/final/data_2020-06-12.xlsx")
